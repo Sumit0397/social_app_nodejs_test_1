@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <button id="toggle_theme" class="toggle_theme">🔆</button>
+    <main class="container">
+        <section class="form-section">
+            <h2>Add New Blog</h2>
+            <form action="/post/addblog" method="post">
+                <div>
+                    <label for="title">Blog Title:</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div>
+                    <label for="description">Blog Description:</label>
+                    <textarea name="description" id="description"></textarea>
+                </div>
+                <div class="btn">
+                    <button>Add Blog</button>
+                </div>
+            </form>
+        </section>
+        <section class="blog_section" id="blog_section">
+
+        </section>
+    </main>
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
